@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body background="ppp.jpg" >
+<marquee behavior="alternate">
+<img src="en.png" width="900" height="98" alt="Cup of coffee on saucer" />
+</marquee>
+   
+       <br><br><br>
+
+        <form action="next.html" onSubmit="return validate()">
+        <table>
+        
+		<tr>
+			<td> </td>
+			<td><a href="index1.html"><font color="Black"><h2><b>Login in</b></h2></font></a></td>
+		</tr>
+            </table>
+        </form>
+        
+        <script language="javascript">
+            <!--
+           
+            function validate()
+            {
+                var valid=false;
+                var name=document.getElementById("name").value;
+                var paswd=document.getElementById("paswd").value;
+                  var name_re=new RegExp("^[A-Z][a-zA-Z'_]+$","g");
+                  var pas_re=new RegExp("^[A-Z][a-zA-Z'_]+$","g");
+                  
+                   
+                  if(name.match(name_re))
+                      {
+                          if(paswd.match(pas_re))
+                              {
+                                  
+                                                valid=true;
+                                      }
+                                      
+                              
+                              else
+                                  alert("Password Does not match");
+                      }
+                      else
+                          alert("User name does not match");
+                      return valid;
+            }
+            -->
+            
+        </script>
+    </center>
+    </form>
+    </body>
+</html>

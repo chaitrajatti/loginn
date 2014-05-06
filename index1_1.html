@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Forum </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate-custom.css" />
+		<style type="text/css">
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    line-height: 55px;
+    color: #00688B;
+    
+    position: absolute;
+    top: 0px;
+    left: 480px;
+    }
+	h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 20px;
+    line-height: 55px;
+    color: #00688B;
+    
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    }
+	
+	</style>
+    </head>
+    <body>
+	<form action="next.html">
+<input type="image" value="exit" name="exit" src="back.png" alt="submit Button" onMouseOut="this.src='back.png'" style=" height: 50px;width:100px" />
+ </form>  
+        
+            <header>
+       <center><b>    <h1> Forum </h1></b></center><br><br>
+				
+            </header>
+            <section>				
+                <div id="container_demo" >
+                    
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form  action="add_file_1.php" autocomplete="on" > 
+                            <center><b><h2>Comment</h2></b> </center><br><br>
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u" > Your name </label>
+                                    <input id="name" name="name" required="required" type="text" placeholder=""/>
+                                </p>
+                             
+                                 <p> 
+                                    <label for="username" class="uname1" data-icon="u" > Topic </label>
+                                    <input id="name1" name="topic" required="required" type="text" placeholder=""/>
+                                </p>
+                                
+                                <p> 
+                                    <label for="username" class="uname2" data-icon="u" > Comments </label>
+                                    <input id="name2" name="comments" required="required" type="text" placeholder=""/>
+                                </p>
+                                
+                                <p class="login button"> 
+                                    <input type="submit" value="Comment" /> 
+								</p>
+                                
+                            </form>
+                        </div>
+
+                       
+						
+                    </div>
+                </div>  
+            </section>
+      
+		
+            
+       
+    </body>
+</html>

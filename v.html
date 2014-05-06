@@ -1,0 +1,85 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body background="poo1234.png">
+	 <marquee behavior="alternate">
+<img src="en.png" width="1000" height="98" alt="Cup of coffee on saucer" /></marquee>
+	<center><h1>ENTER YOUR DETAILS</h1></center>
+        <form method="GET" action="q.php" onSubmit="return validate()">
+           <center> <table border="2" width="35%" height="100%">
+                <tr>
+                    <th width="50" height="50">UserName</th>
+                    <td width="50" height="50" ><input type="text" maxlength="10" id="name" name="name" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50" height="50">Password</th>
+                    <td width="50" height="50"><input type="password" maxlength="8" id="paswd" name="paswd" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50" height="50">PhoneNumber</th>
+                    <td width="50" height="50"><input type="text" maxlength="12" id="phnum" name="phnum" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+                    <th width="50" height="50">EmailId</th>
+                    <td width="50" height="50"><input type="text" maxlength="24" id="mail" name="mail" size="50"/>
+                    </td>
+                </tr>
+                <tr>
+			
+                    <td width="50" height="50" colspan="2" align="center"><input type="submit" value="Register" style="height:30px; width:200px"/>
+                    </td>
+                </tr>
+            </table>
+	</center>
+        </form>
+        <script language="javascript">
+            <!--
+            function validate()
+            {
+                var valid=false;
+                var name=document.getElementById("name").value;
+                var paswd=document.getElementById("paswd").value;
+                 var phnum=document.getElementById("phnum").value;
+                var mail=document.getElementById("mail").value;
+                  var name_re=new RegExp("^[A-Z][a-zA-Z'_]+$","g");
+                  var pas_re=new RegExp("^[A-Z][a-zA-Z'_]+$","g");
+                  var pnum_re=new RegExp("[0-9][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9][0-9][0-9][0-9]+$","g");
+                    var mail_re=new RegExp("^[a-z0-9A-Z]*@[a-z0-9A-Z]*.com|.org|.in|.co+$","g");
+                   
+                  if(name.match(name_re))
+                      {
+                          if(paswd.match(pas_re))
+                              {
+                                  if(phnum.match(pnum_re))
+                                      {
+                                          if(mail.match(mail_re))
+                                              {
+                                                valid=true;
+                                      }
+                                      else
+                                          alert("Mail Id does not match");
+                                      }
+                                      else
+                                          alert("Phnum does not match");
+                              }
+                              else
+                                  alert("Password Does not match");
+                      }
+                      else
+                          alert("User name does not match");
+                      return valid;
+            }
+            -->
+        </script>
+    </body>
+</html>
